@@ -288,11 +288,7 @@ h6 {
   /* Reset left */
   transform: translateY(-50%);
   z-index: 10;
-  /* Remove blur and background since we have 3D now */
-  /* background: radial-gradient(circle at 30% 30%, var(--accent), transparent 70%); */
-  /* filter: blur(60px); */
-  /* opacity: 0.1; */
-  /* animation: float 10s infinite ease-in-out; */
+  z-index: 10;
 }
 
 /* Hide static tag cloud as we have 3D moons now */

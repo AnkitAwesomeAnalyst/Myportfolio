@@ -119,14 +119,15 @@ export function initJupiter() {
 
   // 2. Add "Major Skill" Nodes (SOLID VIBRANT COLORS)
   const skills = [
-    { name: "Storytelling", color: 0xFFD700, pos: new THREE.Vector3(-6, -2, 6) },
+    { name: "Story telling", color: 0xFFD700, pos: new THREE.Vector3(-6, -2, 6) },
     { name: "Data Modeling", color: THEME.accent, pos: new THREE.Vector3(6, -3, 4) },
     { name: "Leadership", color: 0xf472b6, pos: new THREE.Vector3(-4, 6, -2) },
     { name: "Big Data", color: 0x22c55e, pos: new THREE.Vector3(5, 5, -3) },
     { name: "Python", color: 0x3b82f6, pos: new THREE.Vector3(-7, 3, 2) },
     { name: "SQL", color: 0x6366f1, pos: new THREE.Vector3(0, -6, 3) },
     { name: "Machine Learning", color: 0xa855f7, pos: new THREE.Vector3(7, 2, 5) },
-    { name: "Cloud Arch", color: 0xf97316, pos: new THREE.Vector3(2, 7, 0) }
+    { name: "Cloud Arch", color: 0xf97316, pos: new THREE.Vector3(2, 7, 0) },
+    { name: "AI", color: 0xff4d4d, pos: new THREE.Vector3(-3, 4, -4) }
   ];
 
   skills.forEach(skill => {
