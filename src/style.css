@@ -3,15 +3,19 @@
 
 :root {
   /* Colors - Business Mode (Default) - Warm Orange Theme */
-  --bg-color: #FFF8F5; /* Very light peach/orange tint */
-  --text-main: #2D1810; /* Dark warm brown/charcoal */
-  --text-muted: #6D5A50; /* Warm earth tone */
+  --bg-color: #FFF8F5;
+  /* Very light peach/orange tint */
+  --text-main: #2D1810;
+  /* Dark warm brown/charcoal */
+  --text-muted: #6D5A50;
+  /* Warm earth tone */
   --primary: #2D1810;
   /* Dark Brown */
   --accent: #FB923C;
   /* Soft Vibrant Orange */
   --card-bg: #FFFFFF;
-  --border: #FED7AA; /* Pale orange border */
+  --border: #FED7AA;
+  /* Pale orange border */
 
   /* Layout */
   --container-width: 1200px;
@@ -20,6 +24,11 @@
   /* Animation */
   --transition-fast: 0.2s ease;
   --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
 }
 
 *,
@@ -33,13 +42,16 @@
   /* Colors - Data Mode - Dark Warm Theme */
   --bg-color: #1C1917;
   /* Warm Dark Background */
-  --text-main: #FFF7ED; /* Off-white orange tint */
+  --text-main: #FFF7ED;
+  /* Off-white orange tint */
   --text-muted: #A8A29E;
   --primary: #FFF7ED;
   --accent: #F97316;
   /* Bright Orange */
-  --card-bg: #292524; /* Warm Dark Grey */
-  --border: #431407; /* Deep Rust */
+  --card-bg: #292524;
+  /* Warm Dark Grey */
+  --border: #431407;
+  /* Deep Rust */
 
   /* Data Mode Specifics - Orange Glow */
   --glow: 0 0 20px rgba(249, 115, 22, 0.3);
@@ -96,12 +108,12 @@ h6 {
 .btn-primary {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4);
+  box-shadow: 0 4px 15px rgba(251, 146, 60, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(20, 184, 166, 0.5);
+  box-shadow: 0 8px 25px rgba(251, 146, 60, 0.5);
 }
 
 .btn-outline {
@@ -223,13 +235,13 @@ h6 {
 .badge {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(20, 184, 166, 0.1);
+  background: rgba(251, 146, 60, 0.1);
   color: var(--accent);
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
-  border: 1px solid rgba(20, 184, 166, 0.2);
+  border: 1px solid rgba(251, 146, 60, 0.2);
 }
 
 .hero-title {
@@ -432,7 +444,7 @@ h6 {
   background: var(--accent);
   color: white;
   border-color: var(--accent);
-  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+  box-shadow: 0 4px 12px rgba(251, 146, 60, 0.3);
 }
 
 .experience-track {
@@ -536,13 +548,13 @@ h6 {
 .tag {
   font-size: 0.8rem;
   padding: 0.2rem 0.8rem;
-  background: rgba(20, 184, 166, 0.1);
+  background: rgba(251, 146, 60, 0.1);
   color: var(--accent);
   border-radius: 50px;
 }
 
 [data-theme="data"] .tag {
-  background: rgba(20, 184, 166, 0.2);
+  background: rgba(251, 146, 60, 0.2);
 }
 
 
@@ -645,8 +657,8 @@ h6 {
 
 .project-card {
   position: relative;
-  height: 480px;
-  /* Increased from 400px */
+  height: 400px;
+  /* Reduced from 480px */
   background: var(--card-bg);
   border-radius: 16px;
   overflow: hidden;
@@ -670,8 +682,8 @@ h6 {
 }
 
 .project-front {
-  padding: 2rem;
-  /* Reduced from 3rem 2rem */
+  padding: 1.5rem;
+  /* Reduced padding */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -681,9 +693,9 @@ h6 {
 }
 
 .project-icon {
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
-  /* Reduced from 2rem */
+  font-size: 3.5rem;
+  /* Slightly reduced icon size */
+  margin-bottom: 1.2rem;
 }
 
 .project-front h3 {
