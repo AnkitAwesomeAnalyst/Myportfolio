@@ -4,7 +4,10 @@ import { animate, stagger, inView, timeline } from "motion"
 import { initJupiter } from "./jupiter.js";
 
 // Initialize 3D Scene
-initJupiter();
+// Initialize 3D Scene
+document.addEventListener('DOMContentLoaded', () => {
+  initJupiter();
+});
 
 // --- Theme Toggle Logic ---
 const themeToggle = document.getElementById('theme-toggle');

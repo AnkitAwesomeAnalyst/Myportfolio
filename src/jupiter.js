@@ -6,8 +6,9 @@ export function initJupiter() {
   if (!container) return;
 
   container.innerHTML = '';
-  const width = container.clientWidth;
-  const height = container.clientHeight;
+  // Prevent zero dimensions
+  const width = container.clientWidth || 1;
+  const height = container.clientHeight || 1;
 
   // --- Theme Colors ---
   const THEME = {
