@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Colors - Business Mode (Default) */
-  --bg-color: #f8fafc;
-  --text-main: #0f172a;
-  --text-muted: #475569;
-  --primary: #0f172a;
-  /* Dark Blue */
-  --accent: #0f766e;
-  /* Darker Teal for Light Mode */
-  --card-bg: #ffffff;
-  --border: #e2e8f0;
+  /* Colors - Business Mode (Default) - Warm Orange Theme */
+  --bg-color: #FFF8F5; /* Very light peach/orange tint */
+  --text-main: #2D1810; /* Dark warm brown/charcoal */
+  --text-muted: #6D5A50; /* Warm earth tone */
+  --primary: #2D1810;
+  /* Dark Brown */
+  --accent: #FB923C;
+  /* Soft Vibrant Orange */
+  --card-bg: #FFFFFF;
+  --border: #FED7AA; /* Pale orange border */
 
   /* Layout */
   --container-width: 1200px;
@@ -30,19 +30,19 @@
 
 
 [data-theme="data"] {
-  /* Colors - Data Mode */
-  --bg-color: #020617;
-  /* Very Dark Blue */
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --primary: #f8fafc;
-  --accent: #14b8a6;
-  /* Vibrant Teal */
-  --card-bg: #0f172a;
-  --border: #1e293b;
+  /* Colors - Data Mode - Dark Warm Theme */
+  --bg-color: #1C1917;
+  /* Warm Dark Background */
+  --text-main: #FFF7ED; /* Off-white orange tint */
+  --text-muted: #A8A29E;
+  --primary: #FFF7ED;
+  --accent: #F97316;
+  /* Bright Orange */
+  --card-bg: #292524; /* Warm Dark Grey */
+  --border: #431407; /* Deep Rust */
 
-  /* Data Mode Specifics */
-  --glow: 0 0 20px rgba(20, 184, 166, 0.3);
+  /* Data Mode Specifics - Orange Glow */
+  --glow: 0 0 20px rgba(249, 115, 22, 0.3);
 }
 
 body {
