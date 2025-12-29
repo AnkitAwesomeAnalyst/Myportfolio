@@ -1136,3 +1136,102 @@ body {
   color: var(--text-main);
   font-weight: 500;
 }
+
+/* --- UI Refactor Additions (Bento & Metrics) --- */
+
+/* Bento Grid Layout */
+.bento-grid {
+  /* Inherits skills-grid grid layout, ensuring responsive columns */
+}
+
+.bento-card {
+  /* Enhancing existing skill-card with flex layout for chips */
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-content: flex-start;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+[data-theme="data"] .skill-pill {
+  background: rgba(41, 37, 36, 0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.skill-pill:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-link {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.skill-pill:hover .project-link {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Metric Chip */
+.project-front {
+  position: relative; /* Ensure front is relative for absolute chip */
+}
+
+.metric-chip {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(251, 146, 60, 0.3);
+  z-index: 5;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Icon Float Animation */
+.animate-float {
+  animation: floatIcon 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Mobile Responsiveness Refinements */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Stack into 1 column */
+  }
+}
